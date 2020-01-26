@@ -1,0 +1,205 @@
+user@computer MINGW64 ~
+$ ssh -vv -p 29418 username@epona.utep.edu
+OpenSSH_8.1p1, OpenSSL 1.1.1d  10 Sep 2019
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug2: resolving "epona.utep.edu" port 29418
+debug2: ssh_connect_direct
+debug1: Connecting to epona.utep.edu [129.108.44.47] port 29418.
+debug1: Connection established.
+debug1: identity file /c/Users/<user>/.ssh/id_rsa type 0
+debug1: identity file /c/Users/<user>/.ssh/id_rsa-cert type -1
+debug1: identity file /c/Users/<user>/.ssh/id_dsa type -1
+debug1: identity file /c/Users/<user>/.ssh/id_dsa-cert type -1
+debug1: identity file /c/Users/<user>/.ssh/id_ecdsa type -1
+debug1: identity file /c/Users/<user>/.ssh/id_ecdsa-cert type -1
+debug1: identity file /c/Users/<user>/.ssh/id_ed25519 type -1
+debug1: identity file /c/Users/<user>/.ssh/id_ed25519-cert type -1
+debug1: identity file /c/Users/<user>/.ssh/id_xmss type -1
+debug1: identity file /c/Users/<user>/.ssh/id_xmss-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_8.1
+debug1: Remote protocol version 2.0, remote software version GerritCodeReview_3.0.1 (SSHD-CORE-2.0.0)
+debug1: no match: GerritCodeReview_3.0.1 (SSHD-CORE-2.0.0)
+debug2: fd 3 setting O_NONBLOCK
+debug1: Authenticating to epona.utep.edu:29418 as 'username'
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug2: local client KEXINIT proposal
+debug2: KEX algorithms: curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256,diffie-hellman-group14-sha1,ext-info-c
+debug2: host key algorithms: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519-cert-v01@openssh.com,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,ssh-ed25519,rsa-sha2-512,rsa-sha2-256,ssh-rsa
+debug2: ciphers ctos: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-cbc,3des-cbc,aes256-cbc,aes192-cbc
+debug2: ciphers stoc: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-cbc,3des-cbc,aes256-cbc,aes192-cbc
+debug2: MACs ctos: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: MACs stoc: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: compression ctos: none,zlib@openssh.com,zlib
+debug2: compression stoc: none,zlib@openssh.com,zlib
+debug2: languages ctos:
+debug2: languages stoc:
+debug2: first_kex_follows 0
+debug2: reserved 0
+debug2: peer server KEXINIT proposal
+debug2: KEX algorithms: ecdh-sha2-nistp521,ecdh-sha2-nistp384,ecdh-sha2-nistp256,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group18-sha512,diffie-hellman-group17-sha512,diffie-hellman-group16-sha512,diffie-hellman-group15-sha512,diffie-hellman-group14-sha256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+debug2: host key algorithms: ssh-rsa,ecdsa-sha2-nistp256,ssh-ed25519,ecdsa-sha2-nistp521,ecdsa-sha2-nistp384
+debug2: ciphers ctos: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-cbc,3des-cbc,blowfish-cbc,aes192-cbc,aes256-cbc
+debug2: ciphers stoc: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-cbc,3des-cbc,blowfish-cbc,aes192-cbc,aes256-cbc
+debug2: MACs ctos: hmac-md5,hmac-sha1,hmac-sha2-256,hmac-sha2-512,hmac-sha1-96,hmac-md5-96
+debug2: MACs stoc: hmac-md5,hmac-sha1,hmac-sha2-256,hmac-sha2-512,hmac-sha1-96,hmac-md5-96
+debug2: compression ctos: none
+debug2: compression stoc: none
+debug2: languages ctos:
+debug2: languages stoc:
+debug2: first_kex_follows 0
+debug2: reserved 0
+debug1: kex: algorithm: ecdh-sha2-nistp256
+debug1: kex: host key algorithm: ecdsa-sha2-nistp256
+debug1: kex: server->client cipher: aes128-ctr MAC: hmac-sha2-256 compression: none
+debug1: kex: client->server cipher: aes128-ctr MAC: hmac-sha2-256 compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ecdsa-sha2-nistp256 SHA256:X7okS6TAmSPIXzkcAm95QIveYRhG3P9No2ngmIIYz6A
+debug1: Host '[epona.utep.edu]:29418' is known and matches the ECDSA host key.
+debug1: Found key in /c/Users/<user>/.ssh/known_hosts:2
+debug2: set_newkeys: mode 1
+debug1: rekey out after 4294967296 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug2: set_newkeys: mode 0
+debug1: rekey in after 4294967296 blocks
+debug1: Will attempt key: /c/Users/<user>/.ssh/id_rsa RSA SHA256:fHasgmkplR+CdZSk/8XPkGl1HWdKdnoaAW3V3MYPp2I agent
+debug1: Will attempt key: /c/Users/<user>/.ssh/id_dsa
+debug1: Will attempt key: /c/Users/<user>/.ssh/id_ecdsa
+debug1: Will attempt key: /c/Users/<user>/.ssh/id_ed25519
+debug1: Will attempt key: /c/Users/<user>/.ssh/id_xmss
+debug2: pubkey_prepare: done
+debug2: service_accept: ssh-userauth
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey
+debug1: Next authentication method: publickey
+debug1: Offering public key: /c/Users/<user>/.ssh/id_rsa RSA SHA256:fHasgmkplR+CdZSk/8XPkGl1HWdKdnoaAW3V3MYPp2I agent
+debug2: we sent a publickey packet, wait for reply
+debug1: Authentications that can continue: publickey
+debug1: Trying private key: /c/Users/<user>/.ssh/id_dsa
+debug1: Trying private key: /c/Users/<user>/.ssh/id_ecdsa
+debug1: Trying private key: /c/Users/<user>/.ssh/id_ed25519
+debug1: Trying private key: /c/Users/<user>/.ssh/id_xmss
+debug2: we did not send a packet, disable method
+debug1: No more authentication methods to try.
+username@epona.utep.edu: Permission denied (publickey).
+
+user@computer MINGW64 ~
+$ ssh -vv -p 29418 <username>@epona.utep.edu
+OpenSSH_8.1p1, OpenSSL 1.1.1d  10 Sep 2019
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug2: resolving "epona.utep.edu" port 29418
+debug2: ssh_connect_direct
+debug1: Connecting to epona.utep.edu [129.108.44.47] port 29418.
+debug1: Connection established.
+debug1: identity file /c/Users/<user>/.ssh/id_rsa type 0
+debug1: identity file /c/Users/<user>/.ssh/id_rsa-cert type -1
+debug1: identity file /c/Users/<user>/.ssh/id_dsa type -1
+debug1: identity file /c/Users/<user>/.ssh/id_dsa-cert type -1
+debug1: identity file /c/Users/<user>/.ssh/id_ecdsa type -1
+debug1: identity file /c/Users/<user>/.ssh/id_ecdsa-cert type -1
+debug1: identity file /c/Users/<user>/.ssh/id_ed25519 type -1
+debug1: identity file /c/Users/<user>/.ssh/id_ed25519-cert type -1
+debug1: identity file /c/Users/<user>/.ssh/id_xmss type -1
+debug1: identity file /c/Users/<user>/.ssh/id_xmss-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_8.1
+debug1: Remote protocol version 2.0, remote software version GerritCodeReview_3.0.1 (SSHD-CORE-2.0.0)
+debug1: no match: GerritCodeReview_3.0.1 (SSHD-CORE-2.0.0)
+debug2: fd 3 setting O_NONBLOCK
+debug1: Authenticating to epona.utep.edu:29418 as '<username>'
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug2: local client KEXINIT proposal
+debug2: KEX algorithms: curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256,diffie-hellman-group14-sha1,ext-info-c
+debug2: host key algorithms: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519-cert-v01@openssh.com,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,ssh-ed25519,rsa-sha2-512,rsa-sha2-256,ssh-rsa
+debug2: ciphers ctos: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-cbc,3des-cbc,aes256-cbc,aes192-cbc
+debug2: ciphers stoc: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-cbc,3des-cbc,aes256-cbc,aes192-cbc
+debug2: MACs ctos: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: MACs stoc: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: compression ctos: none,zlib@openssh.com,zlib
+debug2: compression stoc: none,zlib@openssh.com,zlib
+debug2: languages ctos:
+debug2: languages stoc:
+debug2: first_kex_follows 0
+debug2: reserved 0
+debug2: peer server KEXINIT proposal
+debug2: KEX algorithms: ecdh-sha2-nistp521,ecdh-sha2-nistp384,ecdh-sha2-nistp256,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group18-sha512,diffie-hellman-group17-sha512,diffie-hellman-group16-sha512,diffie-hellman-group15-sha512,diffie-hellman-group14-sha256,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+debug2: host key algorithms: ssh-rsa,ecdsa-sha2-nistp256,ssh-ed25519,ecdsa-sha2-nistp521,ecdsa-sha2-nistp384
+debug2: ciphers ctos: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-cbc,3des-cbc,blowfish-cbc,aes192-cbc,aes256-cbc
+debug2: ciphers stoc: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-cbc,3des-cbc,blowfish-cbc,aes192-cbc,aes256-cbc
+debug2: MACs ctos: hmac-md5,hmac-sha1,hmac-sha2-256,hmac-sha2-512,hmac-sha1-96,hmac-md5-96
+debug2: MACs stoc: hmac-md5,hmac-sha1,hmac-sha2-256,hmac-sha2-512,hmac-sha1-96,hmac-md5-96
+debug2: compression ctos: none
+debug2: compression stoc: none
+debug2: languages ctos:
+debug2: languages stoc:
+debug2: first_kex_follows 0
+debug2: reserved 0
+debug1: kex: algorithm: ecdh-sha2-nistp256
+debug1: kex: host key algorithm: ecdsa-sha2-nistp256
+debug1: kex: server->client cipher: aes128-ctr MAC: hmac-sha2-256 compression: none
+debug1: kex: client->server cipher: aes128-ctr MAC: hmac-sha2-256 compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ecdsa-sha2-nistp256 SHA256:X7okS6TAmSPIXzkcAm95QIveYRhG3P9No2ngmIIYz6A
+debug1: Host '[epona.utep.edu]:29418' is known and matches the ECDSA host key.
+debug1: Found key in /c/Users/<user>/.ssh/known_hosts:2
+debug2: set_newkeys: mode 1
+debug1: rekey out after 4294967296 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug2: set_newkeys: mode 0
+debug1: rekey in after 4294967296 blocks
+debug1: Will attempt key: /c/Users/<user>/.ssh/id_rsa RSA SHA256:fHasgmkplR+CdZSk/8XPkGl1HWdKdnoaAW3V3MYPp2I agent
+debug1: Will attempt key: /c/Users/<user>/.ssh/id_dsa
+debug1: Will attempt key: /c/Users/<user>/.ssh/id_ecdsa
+debug1: Will attempt key: /c/Users/<user>/.ssh/id_ed25519
+debug1: Will attempt key: /c/Users/<user>/.ssh/id_xmss
+debug2: pubkey_prepare: done
+debug2: service_accept: ssh-userauth
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey
+debug1: Next authentication method: publickey
+debug1: Offering public key: /c/Users/<user>/.ssh/id_rsa RSA SHA256:fHasgmkplR+CdZSk/8XPkGl1HWdKdnoaAW3V3MYPp2I agent
+debug2: we sent a publickey packet, wait for reply
+debug1: Server accepts key: /c/Users/<user>/.ssh/id_rsa RSA SHA256:fHasgmkplR+CdZSk/8XPkGl1HWdKdnoaAW3V3MYPp2I agent
+debug1: Authentication succeeded (publickey).
+Authenticated to epona.utep.edu ([129.108.44.47]:29418).
+debug1: channel 0: new [client-session]
+debug2: channel 0: send open
+debug1: Entering interactive session.
+debug1: pledge: network
+debug2: channel_input_open_confirmation: channel 0: callback start
+debug2: fd 3 setting TCP_NODELAY
+debug2: client_session2_setup: id 0
+debug2: channel 0: request pty-req confirm 1
+debug2: channel 0: request shell confirm 1
+debug2: channel_input_open_confirmation: channel 0: callback done
+debug2: channel 0: open confirm rwindow 2097152 rmax 32768
+debug2: channel_input_status_confirm: type 99 id 0
+debug2: PTY allocation request accepted on channel 0
+debug2: channel_input_status_confirm: type 99 id 0
+debug2: shell request accepted on channel 0
+debug2: channel 0: rcvd ext data 280
+
+  ****    Welcome to Gerrit Code Review    ****
+
+  Hi username, you have successfully connected over SSH.
+
+  Unfortunately, interactive shells are disabled.
+  To clone a hosted Git repository, use:
+
+  git clone ssh://<username>@epona.utep.edu:29418/REPOSITORY_NAME.git
+
+debug2: channel 0: written 280 to efd 6
+debug1: channel 0: free: client-session, nchannels 1
+Connection to epona.utep.edu closed by remote host.
+Connection to epona.utep.edu closed.
+Transferred: sent 3496, received 2176 bytes, in 346.5 seconds
+Bytes per second: sent 10.1, received 6.3
+debug1: Exit status -1
+
+
+After many hours of tryinng to understand why my public key didnt work, and trying to figure out what my accounts name was, i finally realized that the usename which you are not required to fill in, is the username which you try to ssh into.
+This error can happen if you have not given your account a usename.
